@@ -1,568 +1,403 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Exelon Power Solutions</title>
-  <link rel="shortcut icon" type="image/x-icon" href="photos/icon.png" data-react-helmet="true">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-  <meta property="og:title" content="">
-  <meta property="og:image" content="">
-  <meta property="og:url" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="">
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="">
+    <title>Exelon Power Solutions</title>
+    <link rel="shortcut icon" href="images/icon3.ico" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styler.css">
+    <style>
+/* customizable snowflake styling */
+.snowflake {
+color: #fff;
+font-size: 1em;
+font-family: Arial;
+text-shadow: 0 0 1px #000;
+}
 
-  <link href="favicon.ico" rel="shortcut icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
-  <link href="css/lightbox.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+</style>
 </head>
 
-<body>
-  <div id="preloader"></div>
+<body class="row">
+  <div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❄</div>
+</div>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">EXELON</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#wedo">SERVICES</a></li>
+                <li><a href="#download">DOWNLOAD</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
 
-   
-    
-<!--header-->
-  <section id="hero">
-    <div class="hero-container">
-      <div class="wow fadeIn">
-        <div class="hero-logo">
-          <img style="width:35%;height:35%;" class="" src="photos/ExelonLogo.jpg" alt="Imperial">
+            <ul class="side-nav" id="mobile-demo">
+                <h4 style="color:black;margin-left:20px;">EXELON</h4>
+                <div class="divider"></div>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#wedo">SERVICES</a></li>
+                <li><a href="#download">DOWNLOAD</a></li>
+                <li><a href="contact">CONTACT</a></li>
+            </ul>
         </div>
 
-        <h1>Experience the Better.</h1>
-        <h2><span class="rotating">Quality,Dedication,Passion</span></h2>
-        <div class="actions">
-          <a href="#about" class="btn-services">Explore <i class="fa fa-wpexplorer" aria-hidden="true"></i></a>
-          <a href="#footer" class="btn-services"> Contact us <i class="fa fa-phone" aria-hidden="true"></i></a>
-          <a href="#quote" class="btn-services" data-toggle="modal" data-target=".bd-example-modal-lg">Get a Quote <i class="fa fa-send" aria-hidden="true"></i></a>
-        </div>
-        <div id="links">
-            <a href="https://www.facebook.com/XLNPowerSolutions"><i id="social-fb" class="fa fa-facebook fa-3x social"></i></a>
-            <a href="mailto:sales@exelon.ph"><i id="social-em" class="fa fa-envelope-o fa-3x social"></i></a>
-        </div>
-      </div>
+    </nav>
+
+    <div id="front" class="container-fluid">
+        <img src="images/TransparentLogo.png" alt="">
+        <p style="letter-spacing: 4px;">POWER&nbsp;SOLUTIONS</p>
+        <a href="#contact" class="waves-effect z-depth-5 light-blue darken-4 waves-light btn">INQUIRE</a>
+
     </div>
-  </section>
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <form action="https://formspree.io/lrnzvnz15@gmail.com" method="POST">
-                    <input type="text" name="name">
-                    <input type="email" name="_replyto">
-                    <input type="submit" value="Send">
-                </form>
-            </div>
-          </div>
+
+    <div id="about" class="row">
+        <div class="col m8">
+            <h2>Who we are</h2>
+            <div class="divider"></div>
+            <h4>EXELON specializes in switchgear manufacturing and panel building.</h4><br>
+            <p>EXELON also provides custom metal fabrication services, including engineering and product development capabilities.
+            </p>
+            <p>We have specialized in manufacturing custom and standard IT racks.</p>
+            <p>Today, the company is a go -to solutions partner for customers.</p>
+            <p>We have also sister companies that compliments with our products: Metallfit, Inc. (metal manufacturing company) and Datashield OEM Solutions (data center solutions).</p>
         </div>
-<!--header-->
-  <header id="header">
-    <div class="container">
+        <div class="col m4 nodisp">
+            <img src="images/about.png" alt="">
+        </div>
+    </div>
 
-      <div id="logo" class="pull-left">
-
-        <h1 style=" pointer-events: none;"><a href="#hero">E<span style="color:#03C4Ef;">X</span>ELON</a></h1>
+    <div class="row" id="walkthrough">
+      <div id="walkthroughinfo" class="col m6">
+        <h1>Walkthrough</h1>
+        <hr>
+        <p>Here's a small tour of our Plant, Just swipe the photo to see more.</p>
       </div>
+      <div class="carousel carousel-slider col m6">
+    <a class="carousel-item" ><img src="gallery/a.jpg"></a>
+    <a class="carousel-item" ><img src="gallery/b.jpg"></a>
+    <a class="carousel-item" ><img src="gallery/c.jpg"></a>
+    <a class="carousel-item" ><img src="gallery/d.jpg"></a>
+    <a class="carousel-item" ><img src="gallery/e.jpg"></a>
+  </div>
+    </div>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero"><i class="fa fa-home" aria-hidden="true"></i>     Home</a></li>
-          <li><a href="#about"><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</a></li>
-          <li><a href="#services"><i class="fa fa-wrench" aria-hidden="true"></i> Services</a></li>
-          <li><a href="#download"><i class="fa fa-download" aria-hidden="true"></i> Download</a></li>
-          <li><a href="#portfolio"><i class="fa fa-dropbox" aria-hidden="true"></i> Products</a></li>
-          <li><a href="#team"><i class="fa fa-user-o" aria-hidden="true"></i> Team</a></li>
-          <li><a href="#footer"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+    <div id="values" class="row">
+        <div class="col m4 nodisp">
+            <img src="images/values.png" alt="">
+        </div>
+        <div class="col m8">
+            <h2>Our Values</h2>
+            <div class="divider"></div>
+            <p><strong>WHO WE ARE: </strong>We provide services to the Power Generation and Distribution, Telecommunication, Industrial and Commercial industries. We understand that the need for a safe and reliable power supply solutions are paramount. So we emphasize providing exceptional quality and uncompromised safety at a competitive price point. Finally, we pride ourselves on excellent customer orientation, so your required specifications, budgets and project deadlines are our main concern.</p><br>
+            <p><strong>MISSION: </strong>We are committed to constant improvement in every aspect of our business price and quality for our clients, innovation to support ever-changing industry needs, and employee satisfaction to provide opportunity for personal and professional growth.</p><br>
+            <p><strong>VISION: </strong>To be a go-to Power Supply Solutions partner in the Philippines.</p>
+        </div>
+    </div>
+
+    <div id="samplephotos" class="row">
+  <div id="carousel" class="carousel carousel-slider col m3">
+<a class="carousel-item" ><img src="gallery/1.png"></a>
+<a class="carousel-item" ><img src="gallery/2.png"></a>
+<a class="carousel-item" ><img src="gallery/3.png"></a>
+<a class="carousel-item" ><img src="gallery/4.png"></a>
+<a class="carousel-item" ><img src="gallery/5.png"></a>
+<a class="carousel-item" ><img src="gallery/6.png"></a>
+<a class="carousel-item" ><img src="gallery/7.png"></a>
+<a class="carousel-item" ><img src="gallery/8.png"></a>
+<a class="carousel-item" ><img src="gallery/9.png"></a>
+</div>
+<div id="samplephotosinfo" class="col m9">
+  <h1>Sample Photos</h1>
+  <hr>
+  <p>Sample of our products, please swipe the photo to see more</p>
+</div>
+    </div>
+
+    <div style="padding:10px 50px 10px 50px;" id="wedo" class="row">
+      <div id="wedo1" class="col m5">
+        <h2>What we do</h2>
+        <div class="divider"></div>
+        <h5>-Fabrication and Assembly of</h5>
+        <ul>
+          <li>36kv Medium Voltage Switchgears</li>
+          <li>Low Voltage Switchgears</li>
+          <li>Capacitor Banks</li>
+          <li>Synchronizing Panels</li>
+          <li>Motor Control Centers (MCC)</li>
+          <li>Meter Centers</li>
+          <li>Panel Boards</li>
+          <li>Battery Racks</li>
+          <li>Telecom Cabinets</li>
+          <li>Cable Trays/Ladders</li>
+          <li>Customized Electrical Panels</li>
         </ul>
-      </nav>
+      </div>
+      <div id="wedo2" class="col m3 nodisp">
+      <a><img class="z-depth-5" src="images/wedo.png"></a>
     </div>
-  </header>
-<!--header -->
-<!--about-->
-  <section id="about">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">About us</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description"> <strong>EXELON POWER SOLUTIONS, INC.</strong> specializes in switchgear manufacturing and panel building.</p>
-        </div>
+      <div id="wedo3" class="col m4">
+        <h5>-Project Management from Design to Implementations</h5><br>
+        <h5>-Supply and Installation</h5><br>
+        <h5>-Preventive Maintenance</h5>
       </div>
+
     </div>
-    <div class="container about-container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-6 col-md-push-6 about-content">
-          <h2 class="about-title">We provide great services and ideas</h2>
-          <p class="about-text">
-            We provide services to the :
-          </p>
-          <ul>
-              <li>Power Generation and Distribution</li>
-              <li>Telecommunication</li>
-              <li>Industrial & Commercial Industries</li>
-          </ul>
-          <p class="about-text">
-            <strong>EXELON </strong>understands that the need for a safe and reliable power supply solutions are paramount. 
-          </p>
-          <p class="about-text">
-            So we emphasize providing exceptional quality and uncompromised safety at a competitive price point. 
-          </p>
-          <p class="about-text">
-            Finally, we pride ourselves on excellent customer orientation, so your required specifications, budget and project deadlines are our main concern.
-          </p>
-        </div>
-      </div>
+
+    <div id="download">
+        <h3 >Download our Company Profile and Brochure to know more about us.</h3>
+        <a class="waves-effect cyan z-depth-5 waves-light btn" href="download/CompanyProfile.pdf" download="Company Profile"><i class="material-icons right">file_download</i>Company Profile</a>
+        <a class="waves-effect cyan z-depth-5 waves-light btn" href="download/Brochure.pdf" download="Brochure"><i class="material-icons right">file_download</i>Brochure</a>
     </div>
-  </section>
-<!--about-->
-<!--services-->
-  <section id="services">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Our Services</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">Our team welcomes custom projects to serve our customers' needs</p>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-12 service-item">
-          <table id="customers">
-            <tr>
-                <th>Machines</th>
-                <th>Quantity</th>
-            </tr>
-            <tr>
-                <td>CNC Water Jet</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>CNC Turret Punching (20 tons) </td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>CNC Press Brake (125 tons x 3 meters) </td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>NC Shearing</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>Welding machine</td>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td>PEM – Clinching</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Batch Type Powder Coating Line </td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>PLC Control Bus Bar Cutting, Punching & Bending</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Label Printer</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>CNC Engraving Machine</td>
-                <td>1</td>
-            </tr>
-        </table>
-        <hr>  
-      </div>
+    <div id="googleMap" style="height:400px;width:100%;"></div>
 
-            <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-star"></i></div>
-          <br>
-          <h3 class="service-title"><a href="">Quality</a></h3>
-        </div>
-        <div style="margin-right:40px;"class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-shield"></i></div>
-          <br>
-          <h3 class="service-title"><a href="">Safety</a></h3>
-        </div>
-        <div class="col-md-3 service-item">
-          <div class="service-icon"><i class="fa fa-balance-scale"></i></div>
-          <br>
-          <h3 class="service-title"><a href="">Integrity</a></h3>
-        </div>
-       </div>
-      </div>
-  </section>
-<!--services-->
-<!--download-->
-  <section id="download">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12 download-btn-container">
-            <h1 class="download-title">Download our Brochure</h1>
-           <a class="download-btn" href="download/EXELON%20Sales%20Presentation%20-%20March%202017.pdf" download="Exelon">Download Now <i class="fa fa-download" aria-hidden="true"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-<!--download-->
-<!--Products-->
-  <section id="portfolio">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Our Products</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description"></p>
-        </div>
-      </div>
 
-        <div class="col-md-3">
-          <a class="portfolio-item thumbnail" data-lightbox="gallery" data-title="36kv Voltage Switchgears" href="photos/product2.PNG" style="background-image: url(photos/product2.PNG);">
-            <div class="details">
-              <h1><i class="fa fa-search" aria-hidden="true"></i></h1>
-              <span>36kv Medium Voltage Switchgears</span>
+    <form id="contact" class="container" method="post" action="contact.php" role="form">
+        <div  class="row">
+          <h2 style="color:white;text-align: center;" class="text-center">CONTACT</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="messages"></div>
+        <div class="row" style="text-align: center;">
+
+            <div style="border:1px solid gray;border-radius:5px;" class="col s12 slideanim">
+                <div class="input-field col s6">
+                    <input id="name" type="text" name="name" class="validate">
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="contactnumb" type="text" name="contact" class="validate">
+                    <label for="contact">Contact Number</label>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="company_name" type="text" name="name" class="validate">
+                        <label for="company_name">Company Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="email" type="email" name="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="textarea1" type="text" name="message" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Textarea</label>
+                </div>
+                <button style="margin:40px;" class="btn waves-effect waves-light" type="submit" value="Send message">Submit<i class="material-icons right">send</i></button>
             </div>
-          </a>
         </div>
+    </form>
 
-        <div class="col-md-3">
-          <a class="portfolio-item thumbnail" data-lightbox="gallery" data-title="Low Voltage Switchgears" href="photos/product3.PNG" style="background-image: url(photos/product3.PNG);">
-            <div class="details">
-              <h1><i class="fa fa-search" aria-hidden="true"></i></h1>
-              <span>Low Voltage Switchgears</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item thumbnail" data-lightbox="gallery" data-title="Motor Control Centers" href="photos/product4.PNG" style="background-image: url(photos/product4.PNG);">
-            <div class="details">
-              <h1><i class="fa fa-search" aria-hidden="true"></i></h1>
-              <span>Motor Control Centers</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item thumbnail" data-lightbox="gallery" data-title="Automatic Transfer Switches" href="photos/product5.PNG" style="background-image: url(photos/product5.PNG);">
-            <div class="details">
-              <h1><i class="fa fa-search" aria-hidden="true"></i></h1>
-              <span>Automatic Transfer Switches</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-4">
-          <a class="portfolio-item thumbnail" data-lightbox="gallery" data-title="Generator Circuit Breaker" href="photos/product6.PNG" style="background-image: url(photos/product6.PNG);">
-            <div class="details">
-              <h1><i class="fa fa-search" aria-hidden="true"></i></h1>
-              <span>Generator Circuit Breaker</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-4">
-          <a class="portfolio-item thumbnail" data-lightbox="gallery" data-title="Panelboards" href="photos/product7.PNG" style="background-image: url(photos/product7.PNG);">
-            <div class="details">
-              <h1><i class="fa fa-search" aria-hidden="true"></i></h1>
-              <span>Panelboards</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-4">
-          <a class="portfolio-item thumbnail" data-lightbox="gallery" data-title="Enclosed Circuit Breakers" href="photos/product8.PNG" style="background-image: url(photos/product8.PNG);">
-            <div class="details">
-              <h1><i class="fa fa-search" aria-hidden="true"></i></h1>
-              <span>Enclosed Circuit Breakers</span>
-            </div>
-          </a>
-        </div>
-        
-        <div class="col-md-4">
-          <a class="portfolio-item thumbnail" data-lightbox="gallery" data-title="Cable & Ladders Trays" href="photos/product9.PNG" style="background-image: url(photos/product9.PNG);">
-            <div class="details">
-              <h1><i class="fa fa-search" aria-hidden="true"></i></h1>
-              <span>Cable & Ladders Trays</span>
-            </div>
-          </a>
-        </div>
-        
-        <div class="col-md-4">
-          <a class="portfolio-item thumbnail" data-lightbox="gallery" data-title="IT Data Cabinets" href="photos/product10.PNG" style="background-image: url(photos/product10.PNG);">
-            <div class="details">
-              <h1><i class="fa fa-search" aria-hidden="true"></i></h1>
-              <span>IT Data Cabinets</span>
-            </div>
-          </a>
-        </div>
-        
-        <div class="col-md-4">
-          <a class="portfolio-item thumbnail" data-lightbox="gallery" data-title="IT Data Cabinets" href="photos/product11.PNG" style="background-image: url(photos/product11.PNG);">
-            <div class="details">
-              <h1><i class="fa fa-search" aria-hidden="true"></i></h1>
-              <span>IT Data Cabinets</span>
-            </div>
-          </a>
-        </div>
-        
-        <div class="col-md-4">
-          <a class="portfolio-item thumbnail" data-lightbox="gallery" data-title="IT Data Cabinets" href="photos/product12.PNG" style="background-image: url(photos/product12.PNG);">
-            <div class="details">
-              <h1><i class="fa fa-search" aria-hidden="true"></i></h1>
-              <span>IT Data Cabinets</span>
-            </div>
-          </a>
-        </div>
-        
-        <div class="col-md-4">
-          <a class="portfolio-item thumbnail" data-lightbox="gallery" data-title="Data Center Products" href="photos/product13.PNG" style="background-image: url(photos/product13.PNG);">
-            <div class="details">
-              <h1><i class="fa fa-search" aria-hidden="true"></i></h1>
-              <span>Data Center Products</span>
-            </div>
-          </a>
-        </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a class="portfolio-item thumbnail" data-lightbox="gallery" data-title="Electrical Enclosures" href="photos/product1.PNG" style="background-image: url(photos/product1.PNG);">
-            <div class="details">
-              <h1><i class="fa fa-search" aria-hidden="true"></i></h1>
-              <span>Electrical Enclosures</span>
-            </div>
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-<!--products-->
-<!-- sales-->
-  <section id="team">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Meet Our Team</h3>
-          <div class="section-title-divider"></div>
-          <p style="color:black;font-size:15px;"class="section-description">With great team comes great service</p>
-        </div>
-      </div>
-      
-            <div class="row">
-        <div class="col-md-4">
-          <div class="member">
-            <figure class="thumbnail">
-                <div class="pic"><img src="photos/person.jpg" alt=""></div>
-            <h4>Joel</h4>
-            <span>Planning/Quality Assurance</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-            </figure>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="member">
-            <figure class="thumbnail">
-                <div class="pic"><img src="photos/person.jpg" alt=""></div>
-            <h4>Ed</h4>
-            <span>General Manager</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-            </figure>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="member">
-            <figure class="thumbnail">
-                <div class="pic"><img src="photos/person.jpg" alt=""></div>
-            <h4>Romeo</h4>
-            <span>Sales Engineer</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-            </figure>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-<!--sales-->
-<!-- contact-->
-  <section id="contact">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 style="color:white;" class="section-title">Contact Us</h3>
-          <div class="section-title-divider"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-9">
-          <div id="map"></div>
-        </div>
-
-        <div class="col-md-3">
-                        <hr>
-                        <p><i class="fa fa-map-marker"  aria-hidden="true"></i><strong> Location:</strong> 10 Jenny's Ave Rosario,Pasig City </p>
-                        <p><i class="fa fa-tty"  aria-hidden="true"></i><strong> Tel:</strong> +(632)585-1684 </p>
-                        <p><i class="fa fa-tty"  aria-hidden="true"></i><strong> Fax:</strong> +(632)576-6343 </p>
-                        <a href="mailto:romeo.rodriguez@exelon.ph" style="color:white;"><i class="fa fa-envelope-o"  aria-hidden="true"></i><strong> Email:</strong> romeo.rodriguez@exelon.ph </a><br><br>
-                        <a href="mailto:joel.cua@exelon.ph" style="color:white;"><i class="fa fa-envelope-o"  aria-hidden="true"></i><strong> Email:</strong> joel.cua@exelon.ph </a>
-                        <hr>
-        </div>
-        <div style="text-align: center;"class="col-md-12">
-                       <hr>
-                        <a href="https://www.facebook.com/XLNPowerSolutions"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-                        <a href="mailto:sales@exelon.ph"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-<!--contact-->
-<!--footer-->
-    <footer id="footer">
-        <p>Powered by E<span style="color:#03C4EB;">X</span>ELON</p>
-        
-    </footer>
-<!--footer-->
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-  
-
-
-<!--scripts-->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/morphext/morphext.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/stickyjs/sticky.js"></script>
-  <script src="lib/easing/easing.js"></script>
-  <script src="lib/lightbox/lightbox.min.js"></script>
-  <script src="js/custom.js"></script>
-
-  
-      <script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    <script src="validator.js"></script>
+    <script src="contact.js"></script>
+    <script>
         function initMap() {
             var uluru = {
                 lat: 14.586314,
                 lng: 121.091395
             };
-            var map = new google.maps.Map(document.getElementById('map'), {
+            var map = new google.maps.Map(document.getElementById('googleMap'), {
                 zoom: 15,
                 center: uluru,
-                styles: [
-            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
-            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
-            {
-              featureType: 'administrative.locality',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
-            },
-            {
-              featureType: 'poi',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
-            },
-            {
-              featureType: 'poi.park',
-              elementType: 'geometry',
-              stylers: [{color: '#263c3f'}]
-            },
-            {
-              featureType: 'poi.park',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#6b9a76'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'geometry',
-              stylers: [{color: '#38414e'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'geometry.stroke',
-              stylers: [{color: '#212a37'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#9ca5b3'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'geometry',
-              stylers: [{color: '#746855'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'geometry.stroke',
-              stylers: [{color: '#1f2835'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#f3d19c'}]
-            },
-            {
-              featureType: 'transit',
-              elementType: 'geometry',
-              stylers: [{color: '#2f3948'}]
-            },
-            {
-              featureType: 'transit.station',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
-            },
-            {
-              featureType: 'water',
-              elementType: 'geometry',
-              stylers: [{color: '#17263c'}]
-            },
-            {
-              featureType: 'water',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#515c6d'}]
-            },
-            {
-              featureType: 'water',
-              elementType: 'labels.text.stroke',
-              stylers: [{color: '#17263c'}]
-            }
-          ]
+                styles: [{
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#1d2c4d"
+                        }]
+                    },
+                    {
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#8ec3b9"
+                        }]
+                    },
+                    {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "color": "#1a3646"
+                        }]
+                    },
+                    {
+                        "featureType": "administrative.country",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#4b6878"
+                        }]
+                    },
+                    {
+                        "featureType": "administrative.land_parcel",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#64779e"
+                        }]
+                    },
+                    {
+                        "featureType": "administrative.province",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#4b6878"
+                        }]
+                    },
+                    {
+                        "featureType": "landscape.man_made",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#334e87"
+                        }]
+                    },
+                    {
+                        "featureType": "landscape.natural",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#023e58"
+                        }]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#283d6a"
+                        }]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#6f9ba5"
+                        }]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "color": "#1d2c4d"
+                        }]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#023e58"
+                        }]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#3C7680"
+                        }]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#304a7d"
+                        }]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#98a5be"
+                        }]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "color": "#1d2c4d"
+                        }]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#2c6675"
+                        }]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#255763"
+                        }]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#b0d5ce"
+                        }]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "color": "#023e58"
+                        }]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#98a5be"
+                        }]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "color": "#1d2c4d"
+                        }]
+                    },
+                    {
+                        "featureType": "transit.line",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#283d6a"
+                        }]
+                    },
+                    {
+                        "featureType": "transit.station",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#3a4762"
+                        }]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#0e1626"
+                        }]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#4e6d70"
+                        }]
+                    }
+                ]
             });
             var marker = new google.maps.Marker({
                 position: uluru,
@@ -571,7 +406,7 @@
         }
 
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_c6gGIYQSESm458CG1GmBa8Bd1S21vm4&callback=initMap"></script
-    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_c6gGIYQSESm458CG1GmBa8Bd1S21vm4&callback=initMap"></script>
 </body>
+
 </html>

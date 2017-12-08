@@ -1,0 +1,166 @@
+body {
+    font: 300 17px Lato, sans-serif;
+    line-height: 1.8;
+    color: white;
+    background:#000a1a;
+    margin:0px;
+}
+img{
+    width:100%;
+    height:100%;
+}
+#front{
+    background: url(images/header.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    width:100%;
+    text-align: center;
+    height:400px;
+}
+.container-fluid img{
+        width: 45%;
+    height: 35%;
+    margin-top: 100px;
+}
+.brand-logo{
+  pointer-events: none;
+}
+#about{
+    padding:70px 20px 20px 20px;
+    background-color:#001433;
+    margin-bottom:0px;
+}
+#values{
+    padding:20px;
+margin-bottom:0px;
+  background:#00001a;
+}
+nav{
+    padding-left:100px;
+    padding-right:50px;
+    letter-spacing:4px;
+    background-color: #002e4d;
+      position: fixed;
+    z-index: 1000000;
+}
+#download {
+	width:100%;
+    text-align: center;
+    height: auto;
+    background-image: url(images/image3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: left;
+    padding:5%;
+}
+#download a{
+    margin:10px;
+}
+#wedo .col.m4,.col.m5{
+  padding:50px;
+}
+#wedo .col.m3{
+  margin-top: 100px;
+}
+#wedo .col.m4{
+  margin-top:50px;
+}
+#wedo{
+  background:#002266;
+  margin-bottom:0px;
+}
+#wedo3{
+  padding-top:100px;
+  line-height:80px;
+}
+h1,p{
+  color:white;
+}
+#walkthrough{
+  margin-bottom:0px;
+}
+#walkthroughinfo{
+  height:400px;
+  text-align:center;
+  padding:80px;
+  background:#19194d;
+}
+#samplephotos{
+  margin-bottom:0px;
+}
+#samplephotosinfo{
+  height:400px;
+  text-align:center;
+  padding:80px;
+  background:#19194d;
+}
+#contact{
+  margin-top:50px;
+  margin-bottom:0px;
+}
+footer{
+  margin:0px;
+  padding:0px;
+  margin-bottom:0px;
+  background-color:black;
+}
+footer div{
+  margin:0px;
+  padding:0px;
+}
+@media only screen and (max-width: 768px){
+  body{
+        text-align: center;
+        overflow-x: hidden;
+  }
+  #front{
+    height:400px;
+    background-position:center;
+  }
+  #front img{
+    width:350px;
+    height:100px;
+  }
+  #about{
+    padding-top:10px;
+    text-align: center;
+  }
+  #walkthroughinfo{
+    padding:0px;
+    height:220px;
+  }
+  #samplephotos {
+    display: flex;
+    flex-flow: column;
+   }
+   #samplephotosinfo{
+     order:1;
+     padding:0px;
+     height:220px;
+   }
+   #carousel{
+     order:2;
+   }
+   .nodisp{
+     display: none;
+   }
+   #wedo{
+     margin:0px;
+     padding:0px;
+     text-align: center;
+   }
+   #wedo div{
+     padding:0px;
+     margin:0px;
+   }
+   #wedo #wedo3{
+     padding:0px;
+     margin:0px;
+     line-height:0px;
+     text-align:left;
+   }
+}
